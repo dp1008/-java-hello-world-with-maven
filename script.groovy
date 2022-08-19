@@ -4,7 +4,7 @@ def buildApp(){
 def testApp(){
     echo 'testing Builing the application'
 }
-def deploydApp(){
+def deployApp(){
     echo 'deploying the application...'
     echo "deploy version ${params.VERSION}"
 
