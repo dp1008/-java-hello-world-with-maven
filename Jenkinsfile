@@ -31,13 +31,14 @@ pipeline{
                 steps {
                     script {
                         gv.testApp()
-                    }            }
+                    }            
+                }
         }
              stage("deploy"){
                 steps {
                     input {
-                        message "select the env to deply to"
-                        ok "done"
+                        message "(select the env to deply to)"
+                        ok "(done)"
                         parameters {
                         choice(name: 'ENV', choices: ['Dev', 'Test', 'Prod' ], description: '')
                         }
